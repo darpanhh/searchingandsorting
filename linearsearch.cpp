@@ -7,6 +7,7 @@ int main(){
     cout<<"Enter data which needs to be find: ";
     cin>>data;
     int found=0;
+    int i;
     for(int i=0;i<n;i++){
         if(arr[i]==data){
             cout<<"Element found at index:"<<i<<endl;
@@ -14,7 +15,7 @@ int main(){
             break;
         }
     }
-    if(found==0){
+    if(i==n){
         cout<<"Element not found."<<endl;
     }
     return 0;
